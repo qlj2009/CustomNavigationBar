@@ -10,4 +10,25 @@
 
 @implementation CustomNavigationBar
 
+@synthesize customColor;
+
+-(id)initWithFrame:(CGRect)frame{
+  self = [super initWithFrame:frame];
+  if (self) {
+    customColor = [UIColor clearColor];
+  }
+  return self;
+}
+
+-(void)dealloc{
+  [customColor release], customColor = nil;
+}
+
+-(void)drawRect:(CGRect)rect{
+  [super drawRect:rect];
+  CGContextRef context = UIGraphicsGetCurrentContext();
+  CGContextSetFillColorWithColor(context, customColor.CGColor);
+  CGContextFillRect(context, rect);
+}
+
 @end

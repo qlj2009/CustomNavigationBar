@@ -13,6 +13,9 @@
 		598AF4C31473EDA80009B0F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 598AF4C11473EDA80009B0F7 /* InfoPlist.strings */; };
 		598AF4C51473EDA80009B0F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 598AF4C41473EDA80009B0F7 /* main.m */; };
 		598AF4C91473EDA80009B0F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 598AF4C81473EDA80009B0F7 /* AppDelegate.m */; };
+		598AF4D01473EF890009B0F7 /* CustomNavigationBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598AF4CF1473EF890009B0F7 /* CustomNavigationBarController.xib */; };
+		598AF4D31473EFD70009B0F7 /* CustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 598AF4D21473EFD70009B0F7 /* CustomNavigationBar.m */; };
+		598AF4D91473F7410009B0F7 /* UINavigationController+CustomNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 598AF4D81473F7410009B0F7 /* UINavigationController+CustomNavBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +23,17 @@
 		598AF4B81473EDA80009B0F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		598AF4BA1473EDA80009B0F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		598AF4BC1473EDA80009B0F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		598AF4C01473EDA80009B0F7 /* CustomNavigationBarController-Info.plist */ = {isa = PBXFileReference; path = "CustomNavigationBarController-Info.plist"; sourceTree = "<group>"; };
+		598AF4C01473EDA80009B0F7 /* CustomNavigationBarController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomNavigationBarController-Info.plist"; sourceTree = "<group>"; };
 		598AF4C21473EDA80009B0F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		598AF4C41473EDA80009B0F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		598AF4C61473EDA80009B0F7 /* CustomNavigationBarController-Prefix.pch */ = {isa = PBXFileReference; path = "CustomNavigationBarController-Prefix.pch"; sourceTree = "<group>"; };
-		598AF4C71473EDA80009B0F7 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		598AF4C61473EDA80009B0F7 /* CustomNavigationBarController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomNavigationBarController-Prefix.pch"; sourceTree = "<group>"; };
+		598AF4C71473EDA80009B0F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		598AF4C81473EDA80009B0F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		598AF4CF1473EF890009B0F7 /* CustomNavigationBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNavigationBarController.xib; sourceTree = "<group>"; };
+		598AF4D11473EFD70009B0F7 /* CustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBar.h; sourceTree = "<group>"; };
+		598AF4D21473EFD70009B0F7 /* CustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBar.m; sourceTree = "<group>"; };
+		598AF4D71473F7410009B0F7 /* UINavigationController+CustomNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+CustomNavBar.h"; sourceTree = "<group>"; };
+		598AF4D81473F7410009B0F7 /* UINavigationController+CustomNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CustomNavBar.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,11 @@
 			children = (
 				598AF4C71473EDA80009B0F7 /* AppDelegate.h */,
 				598AF4C81473EDA80009B0F7 /* AppDelegate.m */,
+				598AF4D11473EFD70009B0F7 /* CustomNavigationBar.h */,
+				598AF4D21473EFD70009B0F7 /* CustomNavigationBar.m */,
+				598AF4CF1473EF890009B0F7 /* CustomNavigationBarController.xib */,
+				598AF4D71473F7410009B0F7 /* UINavigationController+CustomNavBar.h */,
+				598AF4D81473F7410009B0F7 /* UINavigationController+CustomNavBar.m */,
 				598AF4BF1473EDA80009B0F7 /* Supporting Files */,
 			);
 			path = CustomNavigationBarController;
@@ -141,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				598AF4C31473EDA80009B0F7 /* InfoPlist.strings in Resources */,
+				598AF4D01473EF890009B0F7 /* CustomNavigationBarController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +167,8 @@
 			files = (
 				598AF4C51473EDA80009B0F7 /* main.m in Sources */,
 				598AF4C91473EDA80009B0F7 /* AppDelegate.m in Sources */,
+				598AF4D31473EFD70009B0F7 /* CustomNavigationBar.m in Sources */,
+				598AF4D91473F7410009B0F7 /* UINavigationController+CustomNavBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +235,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomNavigationBarController/CustomNavigationBarController-Prefix.pch";
 				INFOPLIST_FILE = "CustomNavigationBarController/CustomNavigationBarController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -230,6 +247,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomNavigationBarController/CustomNavigationBarController-Prefix.pch";
 				INFOPLIST_FILE = "CustomNavigationBarController/CustomNavigationBarController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

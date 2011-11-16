@@ -11,6 +11,7 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize navigationController;
 
 - (void)dealloc
 {
@@ -21,9 +22,30 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+  
+
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+//  UINib *nib = [UINib nibWithNibName:@"CustomNavigationBarController" bundle:nil];
+//  self.navigationController= [[nib instantiateWithOwner:nil options:nil] objectAtIndex:0];
+//  [(CustomNavigationBar *)self.navigationController.navigationBar setCustomColor:[UIColor redColor]];
+//
+//  NSLog(@"navigationController ViewControllers Count:%d",  [self.navigationController.viewControllers count]);
+  UIViewController *vc = [[[UIViewController alloc] init] autorelease];
+  vc.view.backgroundColor = [UIColor whiteColor];
+//  [self.navigationController pushViewController:vc animated:NO];
+//  [self.navigationController popViewControllerAnimated:YES];
+//  NSLog(@"navigationController ViewControllers Count:%d",  [self.navigationController.viewControllers count]);
+//  [self.navigationController popToRootViewControllerAnimated:YES];
+ NSLog(@"navigationController ViewControllers Count:%d",  [self.navigationController.viewControllers count]);
+  
+  //navigationController = [[UINavigationController alloc] initCustomNavBarWithRoot:vc backgroundColor:[UIColor blueColor]];
+  navigationController = [[UINavigationController alloc] initCustomNavBarWithRoot:vc backgroundColor:[UIColor redColor] barButtonItemColor:[UIColor blackColor]];
+   // navigationController = [[UINavigationController alloc] initWithRootViewController:vc]; 
+  [navigationController pushViewController:[[[UIViewController alloc] init]autorelease] animated:YES];
+  NSLog(@"navigationController ViewControllers Count:%d",  [self.navigationController.viewControllers count]);
+  
+  [self.window addSubview:self.navigationController.view];
+  [self.window makeKeyAndVisible];
     return YES;
 }
 

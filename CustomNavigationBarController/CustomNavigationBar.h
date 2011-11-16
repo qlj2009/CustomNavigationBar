@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomNavigationBar : UINavigationBar
+@interface CustomNavigationBar : UINavigationBar{
+  
+}
+
+@property (nonatomic, retain)UIColor *customColor;
 
 @end
