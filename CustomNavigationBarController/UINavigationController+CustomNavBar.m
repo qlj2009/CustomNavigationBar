@@ -13,7 +13,7 @@ static NSString* const kIBCustomNavigationController = @"CustomNavigationBarCont
 
 @implementation UINavigationController (CustomNavBar)
 
--(id)initCustomNavBarWithRoot:(UIViewController *)root backgroundColor:(UIColor *)color;{
+-(id)initWithRoot:(UIViewController *)root backgroundColor:(UIColor *)color;{
   UINavigationController *navigationController = nil;
   
 //  available in ios 4.0+
@@ -31,7 +31,7 @@ static NSString* const kIBCustomNavigationController = @"CustomNavigationBarCont
   return navigationController;
 }
 
--(id)initCustomNavBarWithRoot:(UIViewController *)root backgroundColor:(UIColor *)bgColor barButtonItemColor:(UIColor *)bbiColor{
+-(id)initWithRoot:(UIViewController *)root backgroundColor:(UIColor *)bgColor barButtonItemColor:(UIColor *)bbiColor{
   UINavigationController *navigationController = nil;
   
 //  available in ios 4.0+

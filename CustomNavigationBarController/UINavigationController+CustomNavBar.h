@@ -10,7 +10,7 @@
 
 @interface UINavigationController (CustomNavBar)
 
--(id)initCustomNavBarWithRoot:(UIViewController *)root backgroundColor:(UIColor *)color;
--(id)initCustomNavBarWithRoot:(UIViewController *)root backgroundColor:(UIColor *)bgColor barButtonItemColor:(UIColor *)bbiColor;
+-(id)initWithRoot:(UIViewController *)root backgroundColor:(UIColor *)color;
+-(id)initWithRoot:(UIViewController *)root backgroundColor:(UIColor *)bgColor barButtonItemColor:(UIColor *)bbiColor;
 
 @end

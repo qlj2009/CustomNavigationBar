@@ -16,6 +16,7 @@
 		598AF4D01473EF890009B0F7 /* CustomNavigationBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598AF4CF1473EF890009B0F7 /* CustomNavigationBarController.xib */; };
 		598AF4D31473EFD70009B0F7 /* CustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 598AF4D21473EFD70009B0F7 /* CustomNavigationBar.m */; };
 		598AF4D91473F7410009B0F7 /* UINavigationController+CustomNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 598AF4D81473F7410009B0F7 /* UINavigationController+CustomNavBar.m */; };
+		598AF52614741AA10009B0F7 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 598AF52514741AA10009B0F7 /* UIColor+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		598AF4D21473EFD70009B0F7 /* CustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBar.m; sourceTree = "<group>"; };
 		598AF4D71473F7410009B0F7 /* UINavigationController+CustomNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+CustomNavBar.h"; sourceTree = "<group>"; };
 		598AF4D81473F7410009B0F7 /* UINavigationController+CustomNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CustomNavBar.m"; sourceTree = "<group>"; };
+		598AF52414741AA10009B0F7 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		598AF52514741AA10009B0F7 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				598AF4CF1473EF890009B0F7 /* CustomNavigationBarController.xib */,
 				598AF4D71473F7410009B0F7 /* UINavigationController+CustomNavBar.h */,
 				598AF4D81473F7410009B0F7 /* UINavigationController+CustomNavBar.m */,
+				598AF52414741AA10009B0F7 /* UIColor+Additions.h */,
+				598AF52514741AA10009B0F7 /* UIColor+Additions.m */,
 				598AF4BF1473EDA80009B0F7 /* Supporting Files */,
 			);
 			path = CustomNavigationBarController;
@@ -169,6 +174,7 @@
 				598AF4C91473EDA80009B0F7 /* AppDelegate.m in Sources */,
 				598AF4D31473EFD70009B0F7 /* CustomNavigationBar.m in Sources */,
 				598AF4D91473F7410009B0F7 /* UINavigationController+CustomNavBar.m in Sources */,
+				598AF52614741AA10009B0F7 /* UIColor+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

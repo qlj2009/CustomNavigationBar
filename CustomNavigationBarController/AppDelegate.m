@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CustomNavigationBar.h"
 
 @implementation AppDelegate
 
@@ -31,6 +32,7 @@
 //
 //  NSLog(@"navigationController ViewControllers Count:%d",  [self.navigationController.viewControllers count]);
   UIViewController *vc = [[[UIViewController alloc] init] autorelease];
+  vc.title = @"Home";
   vc.view.backgroundColor = [UIColor whiteColor];
 //  [self.navigationController pushViewController:vc animated:NO];
 //  [self.navigationController popViewControllerAnimated:YES];
@@ -39,7 +41,8 @@
  NSLog(@"navigationController ViewControllers Count:%d",  [self.navigationController.viewControllers count]);
   
   //navigationController = [[UINavigationController alloc] initCustomNavBarWithRoot:vc backgroundColor:[UIColor blueColor]];
-  navigationController = [[UINavigationController alloc] initCustomNavBarWithRoot:vc backgroundColor:[UIColor redColor] barButtonItemColor:[UIColor blackColor]];
+  navigationController = [[UINavigationController alloc] initWithRoot:vc backgroundColor:[UIColor blueColor] barButtonItemColor:[UIColor grayColor]];
+  [(CustomNavigationBar *)navigationController.navigationBar setCustomStyle:CustomNavigationLinearGradient];
    // navigationController = [[UINavigationController alloc] initWithRootViewController:vc]; 
   [navigationController pushViewController:[[[UIViewController alloc] init]autorelease] animated:YES];
   NSLog(@"navigationController ViewControllers Count:%d",  [self.navigationController.viewControllers count]);
