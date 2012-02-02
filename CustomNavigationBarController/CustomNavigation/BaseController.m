@@ -13,19 +13,20 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
-    // Get our custom nav bar
-    CustomNavigationBar* customNavigationBar = (CustomNavigationBar*)self.navigationController.navigationBar;
-    
-    if (!self.navigationItem.leftBarButtonItem.customView && [[self.navigationController viewControllers] objectAtIndex:0] != self ) 
-    {
-        // Set the nav bar's background
-//        [customNavigationBar setBackgroundWith:[UIImage imageNamed:@"nav_bar"]];
-        // Create a custom back button
-        UIButton  *backButton = [customNavigationBar backButtonWith:[UIImage imageNamed:@"Back_Btn.png"] 
-                                                         highlight:[UIImage imageNamed:@"Back_Btn_Clicked.png"]];
-        self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:backButton] autorelease];
-    }
+  [super viewWillAppear:animated];
+  // Get our custom nav bar
+  CustomNavigationBar* customNavigationBar = (CustomNavigationBar*)self.navigationController.navigationBar;
+  
+  if (!self.navigationItem.leftBarButtonItem.customView 
+      && [[self.navigationController viewControllers] objectAtIndex:0] != self ) 
+  {
+    // Set the nav bar's background
+    //        [customNavigationBar setBackgroundWith:[UIImage imageNamed:@"nav_bar"]];
+    // Create a custom back button
+    UIButton  *backButton = [customNavigationBar backButtonWith:[UIImage imageNamed:@"Back_Btn.png"] 
+                                                      highlight:[UIImage imageNamed:@"Back_Btn_Clicked.png"]];
+    self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:backButton] autorelease];
+  }
 }
 
 @end
@@ -35,21 +36,22 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
+  [super viewWillAppear:animated];
+  
+  // Get our custom nav bar
+  CustomNavigationBar* customNavigationBar = (CustomNavigationBar*)self.navigationController.navigationBar;
+  
+  if (!self.navigationItem.leftBarButtonItem.customView 
+      && [[self.navigationController viewControllers] objectAtIndex:0] != self ) 
+  {
+    // Set the nav bar's background
+    //        [customNavigationBar setBackgroundWith:[UIImage imageNamed:@"nav_bar"]];
+    // Create a custom back button
+    UIButton* backButton = [customNavigationBar backButtonWith:[UIImage imageNamed:@"Back_Btn.png"] 
+                                                     highlight:[UIImage imageNamed:@"Back_Btn_Clicked.png"]];
+    self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:backButton] autorelease];
     
-    // Get our custom nav bar
-    CustomNavigationBar* customNavigationBar = (CustomNavigationBar*)self.navigationController.navigationBar;
-    
-    if (!self.navigationItem.leftBarButtonItem.customView && [[self.navigationController viewControllers] objectAtIndex:0] != self ) 
-    {
-        // Set the nav bar's background
-//        [customNavigationBar setBackgroundWith:[UIImage imageNamed:@"nav_bar"]];
-        // Create a custom back button
-        UIButton* backButton = [customNavigationBar backButtonWith:[UIImage imageNamed:@"Back_Btn.png"] 
-                                                         highlight:[UIImage imageNamed:@"Back_Btn_Clicked.png"]];
-        self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:backButton] autorelease];
-        
-    }
+  }
 }
 
 @end

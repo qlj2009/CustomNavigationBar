@@ -9,11 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface BaseViewController : UIViewController
-
 @end
 
-
-
 @interface BaseTableViewController : UITableViewController
-
 @end

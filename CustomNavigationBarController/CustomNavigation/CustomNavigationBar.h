@@ -33,12 +33,12 @@ typedef enum
 
 -(void) setText:(NSString*)text onBarButton:(UIButton*)barButton;
 -(UIButton*)barButtonWith:(UIImage*)barButtonImage highlight:(UIImage*)barButtonHighlightImage 
-             leftCapWidth:(CGFloat)capWidthtitle:(NSString *)title;
+             leftCapWidth:(CGFloat)capWidth title:(NSString *)title;
 -(UIButton*)barButtonWith:(UIImage*)barButtonImage highlight:(UIImage*)barButtonHighlightImage title:(NSString *)title;
 -(UIButton*)barButtonWith:(UIImage*)barButtonImage highlight:(UIImage*)barButtonHighlightImage leftCapWidth:(CGFloat)capWidth;
 -(UIButton*)barButtonWith:(UIImage*)barButtonImage highlight:(UIImage*)barButtonHighlightImage;
 
--(UIButton*)backButtonWith:(UIImage*)backButtonImage highlight:(UIImage*)backButtonHighlightImage 
+-(UIButton*)backButtonWith:(UIImage*)backButtonImage highlight:(UIImage*)backButtonHighlightImage
               leftCapWidth:(CGFloat)capWidth title:(NSString *)title;
 -(UIButton*)backButtonWith:(UIImage*)backButtonImage highlight:(UIImage*)backButtonHighlightImage title:(NSString *)title;
 -(UIButton*)backButtonWith:(UIImage*)backButtonImage highlight:(UIImage*)backButtonHighlightImage leftCapWidth:(CGFloat)capWidth;

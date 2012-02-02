@@ -26,6 +26,7 @@
 
   BaseViewController *vc = [[[BaseViewController alloc] init] autorelease];
   vc.view.backgroundColor = [UIColor redColor];
+  
   navigationController = [UINavigationController navigationControllerWithRoot:vc 
                                                               backgroundImage:[UIImage imageNamed:@"navbar@2x.png"]];
   

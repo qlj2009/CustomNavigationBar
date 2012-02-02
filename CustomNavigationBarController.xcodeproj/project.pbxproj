@@ -37,8 +37,8 @@
 		598AF4C61473EDA80009B0F7 /* CustomNavigationBarController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomNavigationBarController-Prefix.pch"; sourceTree = "<group>"; };
 		598AF4C71473EDA80009B0F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		598AF4C81473EDA80009B0F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		598B612114DAC5E000DBF1D9 /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
-		598B612214DAC5E000DBF1D9 /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		598B612114DAC5E000DBF1D9 /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseController.h; path = CustomNavigation/BaseController.h; sourceTree = "<group>"; };
+		598B612214DAC5E000DBF1D9 /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseController.m; path = CustomNavigation/BaseController.m; sourceTree = "<group>"; };
 		598B612314DAC5E000DBF1D9 /* CustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBar.h; sourceTree = "<group>"; };
 		598B612414DAC5E000DBF1D9 /* CustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBar.m; sourceTree = "<group>"; };
 		598B612514DAC5E000DBF1D9 /* CustomNavigationBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNavigationBarController.xib; sourceTree = "<group>"; };
@@ -101,6 +101,8 @@
 				598B612014DAC5E000DBF1D9 /* CustomNavigation */,
 				598AF4C71473EDA80009B0F7 /* AppDelegate.h */,
 				598AF4C81473EDA80009B0F7 /* AppDelegate.m */,
+				598B612114DAC5E000DBF1D9 /* BaseController.h */,
+				598B612214DAC5E000DBF1D9 /* BaseController.m */,
 				598AF4BF1473EDA80009B0F7 /* Supporting Files */,
 			);
 			path = CustomNavigationBarController;
@@ -121,8 +123,6 @@
 		598B612014DAC5E000DBF1D9 /* CustomNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				598B612114DAC5E000DBF1D9 /* BaseController.h */,
-				598B612214DAC5E000DBF1D9 /* BaseController.m */,
 				598B612314DAC5E000DBF1D9 /* CustomNavigationBar.h */,
 				598B612414DAC5E000DBF1D9 /* CustomNavigationBar.m */,
 				598B612514DAC5E000DBF1D9 /* CustomNavigationBarController.xib */,
