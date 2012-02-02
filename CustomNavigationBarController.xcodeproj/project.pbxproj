@@ -24,6 +24,10 @@
 		598B613714DAC64200DBF1D9 /* Back_Btn_Clicked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 598B613314DAC64200DBF1D9 /* Back_Btn_Clicked@2x.png */; };
 		598B613A14DAC6FF00DBF1D9 /* navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 598B613814DAC6FF00DBF1D9 /* navbar.png */; };
 		598B613B14DAC6FF00DBF1D9 /* navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 598B613914DAC6FF00DBF1D9 /* navbar@2x.png */; };
+		598B613F14DAD1E700DBF1D9 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 598B613D14DAD1E700DBF1D9 /* TableViewController.m */; };
+		598B614014DAD1E700DBF1D9 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598B613E14DAD1E700DBF1D9 /* TableViewController.xib */; };
+		598B614414DAD40400DBF1D9 /* UACellBackgroundView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 598B614314DAD40400DBF1D9 /* UACellBackgroundView.mm */; };
+		598B614714DAD54A00DBF1D9 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 598B614614DAD54A00DBF1D9 /* CustomTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,13 @@
 		598B613314DAC64200DBF1D9 /* Back_Btn_Clicked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back_Btn_Clicked@2x.png"; sourceTree = "<group>"; };
 		598B613814DAC6FF00DBF1D9 /* navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbar.png; sourceTree = "<group>"; };
 		598B613914DAC6FF00DBF1D9 /* navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar@2x.png"; sourceTree = "<group>"; };
+		598B613C14DAD1E600DBF1D9 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		598B613D14DAD1E700DBF1D9 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		598B613E14DAD1E700DBF1D9 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		598B614214DAD40400DBF1D9 /* UACellBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UACellBackgroundView.h; sourceTree = "<group>"; };
+		598B614314DAD40400DBF1D9 /* UACellBackgroundView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UACellBackgroundView.mm; sourceTree = "<group>"; };
+		598B614514DAD54A00DBF1D9 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		598B614614DAD54A00DBF1D9 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +110,16 @@
 			isa = PBXGroup;
 			children = (
 				598B612014DAC5E000DBF1D9 /* CustomNavigation */,
+				598B614114DAD40400DBF1D9 /* CellBackgroundView */,
 				598AF4C71473EDA80009B0F7 /* AppDelegate.h */,
 				598AF4C81473EDA80009B0F7 /* AppDelegate.m */,
 				598B612114DAC5E000DBF1D9 /* BaseController.h */,
 				598B612214DAC5E000DBF1D9 /* BaseController.m */,
+				598B614514DAD54A00DBF1D9 /* CustomTableViewCell.h */,
+				598B614614DAD54A00DBF1D9 /* CustomTableViewCell.m */,
+				598B613C14DAD1E600DBF1D9 /* TableViewController.h */,
+				598B613D14DAD1E700DBF1D9 /* TableViewController.m */,
+				598B613E14DAD1E700DBF1D9 /* TableViewController.xib */,
 				598AF4BF1473EDA80009B0F7 /* Supporting Files */,
 			);
 			path = CustomNavigationBarController;
@@ -145,6 +162,15 @@
 				598B613314DAC64200DBF1D9 /* Back_Btn_Clicked@2x.png */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		598B614114DAD40400DBF1D9 /* CellBackgroundView */ = {
+			isa = PBXGroup;
+			children = (
+				598B614214DAD40400DBF1D9 /* UACellBackgroundView.h */,
+				598B614314DAD40400DBF1D9 /* UACellBackgroundView.mm */,
+			);
+			path = CellBackgroundView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +231,7 @@
 				598B613714DAC64200DBF1D9 /* Back_Btn_Clicked@2x.png in Resources */,
 				598B613A14DAC6FF00DBF1D9 /* navbar.png in Resources */,
 				598B613B14DAC6FF00DBF1D9 /* navbar@2x.png in Resources */,
+				598B614014DAD1E700DBF1D9 /* TableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +248,9 @@
 				598B612B14DAC5E000DBF1D9 /* CustomNavigationBar.m in Sources */,
 				598B612D14DAC5E000DBF1D9 /* UIColor+Additions.m in Sources */,
 				598B612E14DAC5E000DBF1D9 /* UINavigationController+CustomNavBar.m in Sources */,
+				598B613F14DAD1E700DBF1D9 /* TableViewController.m in Sources */,
+				598B614414DAD40400DBF1D9 /* UACellBackgroundView.mm in Sources */,
+				598B614714DAD54A00DBF1D9 /* CustomTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

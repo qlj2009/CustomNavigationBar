@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "BaseController.h"
+#import "tableViewController.h"
+#import "CustomNavigationBar.h"
 
 @implementation AppDelegate
 
@@ -26,16 +28,21 @@
 
   BaseViewController *vc = [[[BaseViewController alloc] init] autorelease];
   vc.view.backgroundColor = [UIColor redColor];
-  
   navigationController = [UINavigationController navigationControllerWithRoot:vc 
-                                                              backgroundImage:[UIImage imageNamed:@"navbar@2x.png"]];
-  
-  BaseTableViewController *vc1 = [[[BaseTableViewController alloc] init] autorelease];
-  [navigationController pushViewController:vc1 animated:YES];
+                                                              backgroundImage:[UIImage imageNamed:@"navbar.png"]];
+  CustomNavigationBar *navigationBar = (CustomNavigationBar *)vc.navigationController.navigationBar;
+  UIButton *btn = [navigationBar barButtonWith:[UIImage imageNamed:@"Back_btn.png"] highlight:[UIImage imageNamed:@"Back_Btn_Clicked.png"]];
+  [btn addTarget:self action:@selector(pushViewController) forControlEvents:UIControlEventTouchUpInside];
+  vc.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
   
   [self.window addSubview:self.navigationController.view];
   [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)pushViewController{
+  TableViewController *vc1 = [[[TableViewController alloc] initWithNibName:@"tableViewController" bundle:nil] autorelease];
+  [navigationController pushViewController:vc1 animated:YES];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
