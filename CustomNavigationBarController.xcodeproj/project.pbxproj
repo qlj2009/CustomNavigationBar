@@ -13,10 +13,17 @@
 		598AF4C31473EDA80009B0F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 598AF4C11473EDA80009B0F7 /* InfoPlist.strings */; };
 		598AF4C51473EDA80009B0F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 598AF4C41473EDA80009B0F7 /* main.m */; };
 		598AF4C91473EDA80009B0F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 598AF4C81473EDA80009B0F7 /* AppDelegate.m */; };
-		598AF4D01473EF890009B0F7 /* CustomNavigationBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598AF4CF1473EF890009B0F7 /* CustomNavigationBarController.xib */; };
-		598AF4D31473EFD70009B0F7 /* CustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 598AF4D21473EFD70009B0F7 /* CustomNavigationBar.m */; };
-		598AF4D91473F7410009B0F7 /* UINavigationController+CustomNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 598AF4D81473F7410009B0F7 /* UINavigationController+CustomNavBar.m */; };
-		598AF52614741AA10009B0F7 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 598AF52514741AA10009B0F7 /* UIColor+Additions.m */; };
+		598B612A14DAC5E000DBF1D9 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 598B612214DAC5E000DBF1D9 /* BaseController.m */; };
+		598B612B14DAC5E000DBF1D9 /* CustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 598B612414DAC5E000DBF1D9 /* CustomNavigationBar.m */; };
+		598B612C14DAC5E000DBF1D9 /* CustomNavigationBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598B612514DAC5E000DBF1D9 /* CustomNavigationBarController.xib */; };
+		598B612D14DAC5E000DBF1D9 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 598B612714DAC5E000DBF1D9 /* UIColor+Additions.m */; };
+		598B612E14DAC5E000DBF1D9 /* UINavigationController+CustomNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 598B612914DAC5E000DBF1D9 /* UINavigationController+CustomNavBar.m */; };
+		598B613414DAC64200DBF1D9 /* Back_Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 598B613014DAC64200DBF1D9 /* Back_Btn.png */; };
+		598B613514DAC64200DBF1D9 /* Back_Btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 598B613114DAC64200DBF1D9 /* Back_Btn@2x.png */; };
+		598B613614DAC64200DBF1D9 /* Back_Btn_Clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = 598B613214DAC64200DBF1D9 /* Back_Btn_Clicked.png */; };
+		598B613714DAC64200DBF1D9 /* Back_Btn_Clicked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 598B613314DAC64200DBF1D9 /* Back_Btn_Clicked@2x.png */; };
+		598B613A14DAC6FF00DBF1D9 /* navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 598B613814DAC6FF00DBF1D9 /* navbar.png */; };
+		598B613B14DAC6FF00DBF1D9 /* navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 598B613914DAC6FF00DBF1D9 /* navbar@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,13 +37,21 @@
 		598AF4C61473EDA80009B0F7 /* CustomNavigationBarController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomNavigationBarController-Prefix.pch"; sourceTree = "<group>"; };
 		598AF4C71473EDA80009B0F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		598AF4C81473EDA80009B0F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		598AF4CF1473EF890009B0F7 /* CustomNavigationBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNavigationBarController.xib; sourceTree = "<group>"; };
-		598AF4D11473EFD70009B0F7 /* CustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBar.h; sourceTree = "<group>"; };
-		598AF4D21473EFD70009B0F7 /* CustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBar.m; sourceTree = "<group>"; };
-		598AF4D71473F7410009B0F7 /* UINavigationController+CustomNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+CustomNavBar.h"; sourceTree = "<group>"; };
-		598AF4D81473F7410009B0F7 /* UINavigationController+CustomNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CustomNavBar.m"; sourceTree = "<group>"; };
-		598AF52414741AA10009B0F7 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
-		598AF52514741AA10009B0F7 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		598B612114DAC5E000DBF1D9 /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		598B612214DAC5E000DBF1D9 /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		598B612314DAC5E000DBF1D9 /* CustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBar.h; sourceTree = "<group>"; };
+		598B612414DAC5E000DBF1D9 /* CustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBar.m; sourceTree = "<group>"; };
+		598B612514DAC5E000DBF1D9 /* CustomNavigationBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNavigationBarController.xib; sourceTree = "<group>"; };
+		598B612614DAC5E000DBF1D9 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		598B612714DAC5E000DBF1D9 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		598B612814DAC5E000DBF1D9 /* UINavigationController+CustomNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+CustomNavBar.h"; sourceTree = "<group>"; };
+		598B612914DAC5E000DBF1D9 /* UINavigationController+CustomNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CustomNavBar.m"; sourceTree = "<group>"; };
+		598B613014DAC64200DBF1D9 /* Back_Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back_Btn.png; sourceTree = "<group>"; };
+		598B613114DAC64200DBF1D9 /* Back_Btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back_Btn@2x.png"; sourceTree = "<group>"; };
+		598B613214DAC64200DBF1D9 /* Back_Btn_Clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back_Btn_Clicked.png; sourceTree = "<group>"; };
+		598B613314DAC64200DBF1D9 /* Back_Btn_Clicked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back_Btn_Clicked@2x.png"; sourceTree = "<group>"; };
+		598B613814DAC6FF00DBF1D9 /* navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbar.png; sourceTree = "<group>"; };
+		598B613914DAC6FF00DBF1D9 /* navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,15 +98,9 @@
 		598AF4BE1473EDA80009B0F7 /* CustomNavigationBarController */ = {
 			isa = PBXGroup;
 			children = (
+				598B612014DAC5E000DBF1D9 /* CustomNavigation */,
 				598AF4C71473EDA80009B0F7 /* AppDelegate.h */,
 				598AF4C81473EDA80009B0F7 /* AppDelegate.m */,
-				598AF4D11473EFD70009B0F7 /* CustomNavigationBar.h */,
-				598AF4D21473EFD70009B0F7 /* CustomNavigationBar.m */,
-				598AF4CF1473EF890009B0F7 /* CustomNavigationBarController.xib */,
-				598AF4D71473F7410009B0F7 /* UINavigationController+CustomNavBar.h */,
-				598AF4D81473F7410009B0F7 /* UINavigationController+CustomNavBar.m */,
-				598AF52414741AA10009B0F7 /* UIColor+Additions.h */,
-				598AF52514741AA10009B0F7 /* UIColor+Additions.m */,
 				598AF4BF1473EDA80009B0F7 /* Supporting Files */,
 			);
 			path = CustomNavigationBarController;
@@ -100,12 +109,42 @@
 		598AF4BF1473EDA80009B0F7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				598B612F14DAC64200DBF1D9 /* image */,
 				598AF4C01473EDA80009B0F7 /* CustomNavigationBarController-Info.plist */,
 				598AF4C11473EDA80009B0F7 /* InfoPlist.strings */,
 				598AF4C41473EDA80009B0F7 /* main.m */,
 				598AF4C61473EDA80009B0F7 /* CustomNavigationBarController-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		598B612014DAC5E000DBF1D9 /* CustomNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				598B612114DAC5E000DBF1D9 /* BaseController.h */,
+				598B612214DAC5E000DBF1D9 /* BaseController.m */,
+				598B612314DAC5E000DBF1D9 /* CustomNavigationBar.h */,
+				598B612414DAC5E000DBF1D9 /* CustomNavigationBar.m */,
+				598B612514DAC5E000DBF1D9 /* CustomNavigationBarController.xib */,
+				598B612614DAC5E000DBF1D9 /* UIColor+Additions.h */,
+				598B612714DAC5E000DBF1D9 /* UIColor+Additions.m */,
+				598B612814DAC5E000DBF1D9 /* UINavigationController+CustomNavBar.h */,
+				598B612914DAC5E000DBF1D9 /* UINavigationController+CustomNavBar.m */,
+			);
+			path = CustomNavigation;
+			sourceTree = "<group>";
+		};
+		598B612F14DAC64200DBF1D9 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				598B613814DAC6FF00DBF1D9 /* navbar.png */,
+				598B613914DAC6FF00DBF1D9 /* navbar@2x.png */,
+				598B613014DAC64200DBF1D9 /* Back_Btn.png */,
+				598B613114DAC64200DBF1D9 /* Back_Btn@2x.png */,
+				598B613214DAC64200DBF1D9 /* Back_Btn_Clicked.png */,
+				598B613314DAC64200DBF1D9 /* Back_Btn_Clicked@2x.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +198,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				598AF4C31473EDA80009B0F7 /* InfoPlist.strings in Resources */,
-				598AF4D01473EF890009B0F7 /* CustomNavigationBarController.xib in Resources */,
+				598B612C14DAC5E000DBF1D9 /* CustomNavigationBarController.xib in Resources */,
+				598B613414DAC64200DBF1D9 /* Back_Btn.png in Resources */,
+				598B613514DAC64200DBF1D9 /* Back_Btn@2x.png in Resources */,
+				598B613614DAC64200DBF1D9 /* Back_Btn_Clicked.png in Resources */,
+				598B613714DAC64200DBF1D9 /* Back_Btn_Clicked@2x.png in Resources */,
+				598B613A14DAC6FF00DBF1D9 /* navbar.png in Resources */,
+				598B613B14DAC6FF00DBF1D9 /* navbar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,9 +217,10 @@
 			files = (
 				598AF4C51473EDA80009B0F7 /* main.m in Sources */,
 				598AF4C91473EDA80009B0F7 /* AppDelegate.m in Sources */,
-				598AF4D31473EFD70009B0F7 /* CustomNavigationBar.m in Sources */,
-				598AF4D91473F7410009B0F7 /* UINavigationController+CustomNavBar.m in Sources */,
-				598AF52614741AA10009B0F7 /* UIColor+Additions.m in Sources */,
+				598B612A14DAC5E000DBF1D9 /* BaseController.m in Sources */,
+				598B612B14DAC5E000DBF1D9 /* CustomNavigationBar.m in Sources */,
+				598B612D14DAC5E000DBF1D9 /* UIColor+Additions.m in Sources */,
+				598B612E14DAC5E000DBF1D9 /* UINavigationController+CustomNavBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +324,7 @@
 				598AF4CE1473EDA80009B0F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

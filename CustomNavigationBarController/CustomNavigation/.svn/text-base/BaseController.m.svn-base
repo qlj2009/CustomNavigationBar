@@ -1,0 +1,58 @@
+//
+//  RootViewController.m
+//  CustomNavigationBarController
+//
+//  Created by Qiu Lijian on 12/28/11.
+//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import "BaseController.h"
+#import "CustomNavigationBar.h"
+
+@implementation BaseViewController
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    // Get our custom nav bar
+    CustomNavigationBar* customNavigationBar = (CustomNavigationBar*)self.navigationController.navigationBar;
+    
+    if ([[self.navigationController viewControllers] objectAtIndex:0] != self && !self.navigationItem.leftBarButtonItem.customView) 
+    {
+        // Set the nav bar's background
+//        [customNavigationBar setBackgroundWith:[UIImage imageNamed:@"nav_bar"]];
+        // Create a custom back button
+        UIButton* backButton = [customNavigationBar backButtonWith:[UIImage imageNamed:@"Back_Btn"] highlight:[UIImage imageNamed:@"Back_Btn_Clicked"] leftCapWidth:14.0];
+        backButton.titleLabel.textColor = [UIColor colorWithRed:254.0/255.0 green:239.0/255.0 blue:218.0/225.0 alpha:1];
+         [customNavigationBar setText:[LanguageManager back] onBackButton:backButton];
+        self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:backButton] autorelease];
+       
+    }
+}
+
+@end
+
+
+@implementation BaseTableViewController
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    // Get our custom nav bar
+    CustomNavigationBar* customNavigationBar = (CustomNavigationBar*)self.navigationController.navigationBar;
+    
+    if ([[self.navigationController viewControllers] objectAtIndex:0] != self && !self.navigationItem.leftBarButtonItem.customView) 
+    {
+        // Set the nav bar's background
+//        [customNavigationBar setBackgroundWith:[UIImage imageNamed:@"nav_bar"]];
+        // Create a custom back button
+        UIButton* backButton = [customNavigationBar backButtonWith:[UIImage imageNamed:@"Back_Btn"] highlight:[UIImage imageNamed:@"Back_Btn_Clicked"] leftCapWidth:14.0];
+        backButton.titleLabel.textColor = [UIColor colorWithRed:254.0/255.0 green:239.0/255.0 blue:218.0/225.0 alpha:1];
+        [customNavigationBar setText:[LanguageManager back] onBackButton:backButton]; 
+        self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:backButton] autorelease];
+        
+    }
+}
+
+@end

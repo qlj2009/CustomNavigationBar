@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "CustomNavigationBar.h"
+#import "BaseController.h"
 
 @implementation AppDelegate
 
@@ -22,30 +22,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-  
+  self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
 
-    // Override point for customization after application launch.
-//  UINib *nib = [UINib nibWithNibName:@"CustomNavigationBarController" bundle:nil];
-//  self.navigationController= [[nib instantiateWithOwner:nil options:nil] objectAtIndex:0];
-//  [(CustomNavigationBar *)self.navigationController.navigationBar setCustomColor:[UIColor redColor]];
-//
-//  NSLog(@"navigationController ViewControllers Count:%d",  [self.navigationController.viewControllers count]);
-  UIViewController *vc = [[[UIViewController alloc] init] autorelease];
-  vc.title = @"Home";
-  vc.view.backgroundColor = [UIColor whiteColor];
-//  [self.navigationController pushViewController:vc animated:NO];
-//  [self.navigationController popViewControllerAnimated:YES];
-//  NSLog(@"navigationController ViewControllers Count:%d",  [self.navigationController.viewControllers count]);
-//  [self.navigationController popToRootViewControllerAnimated:YES];
- NSLog(@"navigationController ViewControllers Count:%d",  [self.navigationController.viewControllers count]);
+  BaseViewController *vc = [[[BaseViewController alloc] init] autorelease];
+  vc.view.backgroundColor = [UIColor redColor];
+  navigationController = [UINavigationController navigationControllerWithRoot:vc 
+                                                              backgroundImage:[UIImage imageNamed:@"navbar@2x.png"]];
   
-  //navigationController = [[UINavigationController alloc] initCustomNavBarWithRoot:vc backgroundColor:[UIColor blueColor]];
-  navigationController = [[UINavigationController alloc] initWithRoot:vc backgroundColor:[UIColor blueColor] barButtonItemColor:[UIColor grayColor]];
-  [(CustomNavigationBar *)navigationController.navigationBar setCustomStyle:CustomNavigationLinearGradient];
-   // navigationController = [[UINavigationController alloc] initWithRootViewController:vc]; 
-  [navigationController pushViewController:[[[UIViewController alloc] init]autorelease] animated:YES];
-  NSLog(@"navigationController ViewControllers Count:%d",  [self.navigationController.viewControllers count]);
+  BaseTableViewController *vc1 = [[[BaseTableViewController alloc] init] autorelease];
+  [navigationController pushViewController:vc1 animated:YES];
   
   [self.window addSubview:self.navigationController.view];
   [self.window makeKeyAndVisible];

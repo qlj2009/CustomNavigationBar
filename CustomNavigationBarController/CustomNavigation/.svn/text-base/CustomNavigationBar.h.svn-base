@@ -1,0 +1,39 @@
+//
+//  CustomNavigationBar.h
+//  CustomNavigationBarController
+//
+//  Created by LiJian Qiu on 11-11-16.
+//  Copyright (c) 2011年 __MyCompanyName__. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+typedef enum 
+{
+  CustomNavigationColor = 0,
+  CustomNavigationLinearGradient,
+  CustomNavigationImage
+}CustomNavigationStyle;
+
+
+@interface CustomNavigationBar : UINavigationBar{
+  
+  CGFloat backButtonCapWidth;
+  IBOutlet UINavigationController* navigationController;
+  
+}
+@property (nonatomic)CustomNavigationStyle customStyle;
+@property (nonatomic, retain) IBOutlet UINavigationController* navigationController;
+@property (nonatomic, retain)UIImageView *navigationBarBackgroundImage;
+
+@property (nonatomic, retain)UIColor *navigationBarBackgroundColor;
+
+-(void) setBackgroundWith:(UIImage*)backgroundImage;
+-(void) clearBackground;
+-(UIButton*) backButtonWith:(UIImage*)backButtonImage highlight:(UIImage*)backButtonHighlightImage leftCapWidth:(CGFloat)capWidth;
+-(void) setText:(NSString*)text onBackButton:(UIButton*)backButton;
+
++(UIButton *)rightbuttonWith:(UIImage*)rightButtonImage highlight:(UIImage*)rightButtonHighlightImage title:(NSString *)title;
+
+
+@end
